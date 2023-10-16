@@ -1,0 +1,20 @@
+template <class T1, class T2>
+class CA {
+public:
+    T1 data1;
+    T2 data2;
+    CA(T1 a, T2 b) {
+        data1 = a;
+        data2 = b;
+    }
+    void display() {
+        cout << "data1 = " << data1 << endl;
+        cout << "data2 = " << data2 << endl;
+    }
+};
+
+int main() {
+    CA<int, float> c(7, 3.5);
+    c.display();
+    return 0; // Add a return statement to indicate successful program execution.
+}
